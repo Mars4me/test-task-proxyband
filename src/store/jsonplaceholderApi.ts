@@ -3,7 +3,7 @@ import { IAlbum, IPost, IUser } from '../interfaces';
 
 export const jsonplaceholderApi = createApi({
     reducerPath: 'jsonplaceholderApi',
-    baseQuery: fetchBaseQuery({ baseUrl: 'https:/jsonplaceholder.typicode.com' }),
+    baseQuery: fetchBaseQuery({ baseUrl: 'https://jsonplaceholder.typicode.com' }),
     endpoints: (builder) => ({
         getAllUsers: builder.query<IUser[], any>({
             query: () => '/users',
