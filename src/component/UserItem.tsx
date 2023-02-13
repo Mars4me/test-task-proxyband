@@ -17,6 +17,7 @@ const propsAreEqueal = (prevProp: UserItemProps, nextProp: UserItemProps) =>
     _.isEqual(prevProp.user, nextProp.user) && prevProp.className === prevProp.className;
 
 export const UserItem: FC<Readonly<UserItemProps>> = memo(({ user, handleOpenModal, className }) => {
+    console.log(import.meta.env.BASE_URL);
     return (
         <Col className={mergeClassName('p-3', className)}>
             <div className="people-nearby">
@@ -31,7 +32,10 @@ export const UserItem: FC<Readonly<UserItemProps>> = memo(({ user, handleOpenMod
                             <p className="text-muted">{user.phone}</p>
                         </Col>
                         <Col md={3} sm={3} className="d-flex flex-column gap-3 justify-content-center">
-                            <Link to={`/posts/${user.id}`} className="btn btn-primary">
+                            <Link
+                                to={`${import.meta.env.BASE_URL}/posts/${user.id}`}
+                                className="btn btn-primary"
+                            >
                                 Posts
                             </Link>
                             <Button type="button" variant="primary" onClick={() => handleOpenModal(user.id)}>

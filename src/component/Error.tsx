@@ -8,7 +8,7 @@ interface ErrorProps {
 const Error = ({ message }: Readonly<ErrorProps>) => {
     return (
         <>
-            <Link to="/">Back to Home</Link>
+            <Link to={`${import.meta.env.BASE_URL}`}>Back to Home</Link>
             <Alert variant="danger">{'Something gone wrong... ' || message}</Alert>
         </>
     );
