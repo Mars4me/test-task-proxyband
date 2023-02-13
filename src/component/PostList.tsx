@@ -32,7 +32,7 @@ const PostList = () => {
             {users && userId && (
                 <>
                     <h2>{users[+userId - 1].name} posts.</h2>
-                    <Link to="/" className="text-white btn btn-primary">
+                    <Link to={`${import.meta.env.BASE_URL}`} className="text-white btn btn-primary">
                         Users list
                     </Link>
                 </>
