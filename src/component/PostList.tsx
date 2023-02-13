@@ -21,7 +21,7 @@ const PostList = () => {
     }
 
     if (userId) {
-        if (+userId && users && +userId >= users.length) {
+        if (+userId && users && +userId > users.length) {
             return <Error message={"Can't find user's posts"} />;
         }
     }

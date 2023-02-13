@@ -17,7 +17,6 @@ const propsAreEqueal = (prevProp: UserItemProps, nextProp: UserItemProps) =>
     _.isEqual(prevProp.user, nextProp.user) && prevProp.className === prevProp.className;
 
 export const UserItem: FC<Readonly<UserItemProps>> = memo(({ user, handleOpenModal, className }) => {
-    console.log(import.meta.env.BASE_URL);
     return (
         <Col className={mergeClassName('p-3', className)}>
             <div className="people-nearby">
