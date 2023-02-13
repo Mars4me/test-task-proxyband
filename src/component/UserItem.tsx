@@ -33,7 +33,7 @@ export const UserItem: FC<Readonly<UserItemProps>> = memo(({ user, handleOpenMod
                         </Col>
                         <Col md={3} sm={3} className="d-flex flex-column gap-3 justify-content-center">
                             <Link
-                                to={`${import.meta.env.BASE_URL}posts/${user.id}`}
+                                to={`${import.meta.env.BASE_URL}/posts/${user.id}`}
                                 className="btn btn-primary"
                             >
                                 Posts
