@@ -34,9 +34,14 @@ html {
 
 .people-nearby .nearby-user {
     margin-bottom: 20px;
-    padding: 20px 0;
-    border-top: 1px solid #f1f2f2;
-    border-bottom: 1px solid #f1f2f2;
+    padding: 20px 10px;
+    border-top: 2px solid #e6e7e7;
+    border-bottom: 2px solid #e6e7e7;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.people-nearby .nearby-user:hover {
+    background-color: rgba(63, 63, 63, 0.2);
 }
 
 img.profile-photo-lg {

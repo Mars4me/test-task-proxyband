@@ -10,12 +10,13 @@ function App() {
     return (
         <Container>
             <Row>
-                <Col md="8" className="mx-auto my-2"></Col>
-                <Routes>
-                    <Route path={import.meta.env.BASE_URL} element={<UsersList />} />
-                    <Route path={import.meta.env.BASE_URL + '/posts/:userId'} element={<PostList />} />
-                    <Route path={import.meta.env.BASE_URL + '/*'} element={<Error />} />
-                </Routes>
+                <Col md="10" className="mx-auto my-2">
+                    <Routes>
+                        <Route path={import.meta.env.BASE_URL} element={<UsersList />} />
+                        <Route path={import.meta.env.BASE_URL + '/posts/:userId'} element={<PostList />} />
+                        <Route path={import.meta.env.BASE_URL + '/*'} element={<Error />} />
+                    </Routes>
+                </Col>
             </Row>
         </Container>
     );
