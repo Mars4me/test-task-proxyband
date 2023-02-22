@@ -1,7 +1,6 @@
 # Test task
 
-copy repo => to start project locally
-yarn i / npm i => yarn dev / npm run dev
+test-task  RTK Quarry
 
 ## Github pages
 
